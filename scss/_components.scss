@@ -6,9 +6,15 @@
 }
 // header
 header{
-    display: block;
-    position: fixed;
+    .fixed-top {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
     .navbar{
+        background-color: transparent;
         height: 85px;
     }
     .navbar-expand-sm{

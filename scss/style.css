@@ -1,3 +1,24 @@
+* {
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box; }
 
+header .navbar {
+  height: 85px; }
+header .navbar-expand-sm {
+  justify-content: space-between; }
+header .navbar-brand img {
+  max-height: 100%; }
+header .navbar-nav li {
+  margin: 0 5px; }
+  header .navbar-nav li a {
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black; }
+    header .navbar-nav li a:hover {
+      color: #d6b161; }
+header .navbar-nav li.nav-item.active a {
+  color: #d6b161; }
 
 /*# sourceMappingURL=style.css.map */

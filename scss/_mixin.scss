@@ -1,0 +1,4 @@
+@mixin lightfont( $f-size,$f-weight) {
+    font-size: $f-size;
+    font-weight:$f-weight;
+}

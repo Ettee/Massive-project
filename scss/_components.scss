@@ -1,0 +1,42 @@
+@import "./mixin";
+@import "./variable";
+*{
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+// header
+header{
+    display: block;
+    position: fixed;
+    .navbar{
+        height: 85px;
+    }
+    .navbar-expand-sm{
+        justify-content: space-between;
+    }
+    .navbar-brand{
+        img{
+            max-height: 100%;
+        }
+    }
+    .navbar-nav {
+        li{
+            margin:0 5px;
+            a{
+                @include lightfont( 13px,400);
+                text-transform: uppercase;
+                text-decoration: none;
+                color: black;
+                &:hover{
+                    color: $font-color;
+                }
+            }
+        }
+        li.nav-item.active{
+
+            a{
+                color: $font-color;
+            }
+        }
+    }
+}

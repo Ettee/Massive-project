@@ -2,7 +2,14 @@
   font-family: 'Open Sans', sans-serif;
   box-sizing: border-box; }
 
+header .fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030; }
 header .navbar {
+  background-color: transparent;
   height: 85px; }
 header .navbar-expand-sm {
   justify-content: space-between; }

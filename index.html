@@ -13,6 +13,11 @@
   <!-- GOOGLE FONT -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400&display=swap&subset=vietnamese"
     rel="stylesheet">
+  <!-- OWL CAROUSEL -->
+  <link rel="stylesheet" href="./css/owlCarousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="./css/owlCarousel/owl.theme.default.min.css">
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
   <!-- CSS -->
   <link rel="stylesheet" href="./css/style.css">
 
@@ -56,7 +61,72 @@
       </ul>
     </nav>
   </header>
-  
+  <section class="carousel-banner">
+    <div class="owl-carousel owl-theme">
+      <div class="item">
+        <img src="./img/banner/bs1.jpg" alt="">
+        <div class="banner-text">
+          <p>hi there!</p>
+          <p>We are massive</p>
+          <p class="text-color">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Illum exercitationem, eaque vitae temporibus autem id fuga voluptatibus vero. Error, illo.</p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="./img/banner/bs2.jpg" alt="">
+        <div class="banner-text">
+          <p> We've Lots of !</p>
+          <p> Reusable Components</p>
+          <p class="text-color">Vulputate nulla. Quisque lacinia nisi erat,
+          </p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="./img/banner/bs3.jpg" alt="">
+        <div class="banner-text">
+          <p class="light-txt"> Why Choose massive ? </p>
+          <p class="light-txt"> unlimited possibilities </p>
+          <p class="light-txt">Integer nec nulla bibendum, venenatis elit vel, vulputate nulla. Quisque lacinia nisi erat,
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- LOVE SECTION -->
+  <section class="love-section">
+    <div class="love-text">
+      <h1>We love to design</h1>
+      <p class="text-color">Lid est laborum dolo rumes fugats untras.
+         Etharums ser quidem rerum facilis dolores nemis omnis 
+         fugats vitaes nemo minima rerums unsers sadips amets.</p>
+
+    </div>
+    <div class="love-col row">
+      <div class="col-sm-4">
+        <div class="col-content">
+          <div class="icon"><i class="fa fa-pencil-ruler"></i></div>
+          <h2>modern design</h2>
+          <p>Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend.</p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="col-content">
+          <div class="icon"><i class="fa fa-tablet-alt"></i></div>
+          <h2>BOOTSTRAP</h2>
+          <p>Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend.</p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="col-content">
+          <div class="icon"><i class="fas fa-wine-glass-alt"></i></div>
+          <h2>CLEAN CODE</h2>
+          <p>Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
 
 
 
@@ -72,12 +142,40 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
+  <!-- POPPER.JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
     crossorigin="anonymous"></script>
+  <!-- BOOTSTRAP4 -->
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+  <!-- OWL CAROUSEL -->
+  <script src="./js/owlCarousel/owl.carousel.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        autoplay:true,
+        autoplayTimeout:3000,
+        autoplaySpeed:1000,
+        responsive: {
+          0: {
+            items: 1
+          },
+          600: {
+            items: 3
+          },
+          1000: {
+            items: 1
+          }
+        }
+
+      });
+    });
+  </script>
 </body>
 
 </html>

@@ -2,6 +2,9 @@
   font-family: 'Open Sans', sans-serif;
   box-sizing: border-box; }
 
+.text-color {
+  color: #7e7e7e; }
+
 header .fixed-top {
   position: fixed;
   top: 0;
@@ -9,8 +12,9 @@ header .fixed-top {
   left: 0;
   z-index: 1030; }
 header .navbar {
-  background-color: transparent;
-  height: 85px; }
+  background-color: white;
+  height: 85px;
+  box-shadow: 0px 2px 14px #888888; }
 header .navbar-expand-sm {
   justify-content: space-between; }
 header .navbar-brand img {
@@ -27,5 +31,99 @@ header .navbar-nav li {
       color: #d6b161; }
 header .navbar-nav li.nav-item.active a {
   color: #d6b161; }
+
+.owl-carousel .item img {
+  height: 70%; }
+.owl-carousel .item .banner-text {
+  position: absolute;
+  top: 40%;
+  left: 12%;
+  width: 40%; }
+  .owl-carousel .item .banner-text p:nth-child(1) {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 2px; }
+  .owl-carousel .item .banner-text p:nth-child(2) {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 30px;
+    letter-spacing: 1px; }
+  .owl-carousel .item .banner-text p:nth-child(3) {
+    margin-top: 30px;
+    line-height: 32px;
+    font-size: 14px; }
+.owl-carousel .owl-dots {
+  position: absolute;
+  left: 50%;
+  bottom: 6%; }
+  .owl-carousel .owl-dots button {
+    outline: none; }
+  .owl-carousel .owl-dots .owl-dot span {
+    width: 13px !important;
+    height: 13px !important;
+    background: transparent !important;
+    border: 1px solid white; }
+.owl-carousel .owl-stage-outer {
+  height: 750px; }
+.owl-carousel .owl-nav {
+  display: none; }
+.owl-carousel .light-txt {
+  color: #fff !important; }
+
+.love-section {
+  width: 75%;
+  margin: 100px auto; }
+  .love-section .love-text h1 {
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center; }
+  .love-section .love-text p {
+    line-height: 30px;
+    width: 70%;
+    margin: 50px  auto;
+    text-align: center; }
+  .love-section .love-col .col-content {
+    border: 1px #e9e9e9 solid;
+    border-radius: 4px;
+    position: relative;
+    padding: 30px;
+    height: 220px;
+    margin: 50px 20px; }
+    .love-section .love-col .col-content h2 {
+      text-transform: uppercase;
+      font-weight: 400;
+      letter-spacing: 1px;
+      font-size: 20px;
+      margin-top: 45px;
+      margin-bottom: 25px; }
+    .love-section .love-col .col-content p {
+      font-size: 14px;
+      font-weight: 500;
+      color: #7e7e7e;
+      line-height: 23px;
+      text-align: left; }
+    .love-section .love-col .col-content .icon {
+      position: absolute;
+      top: -29px;
+      box-shadow: 0px 2px #fff; }
+      .love-section .love-col .col-content .icon i {
+        font-size: 30px;
+        color: #fff;
+        width: 60px;
+        height: 60px;
+        border: 1px transparent solid;
+        border-radius: 5px;
+        background: #222;
+        padding: 13px;
+        display: flex;
+        justify-content: center;
+        box-shadow: 0px 0px 0px 10px #fff;
+        transition: all 0.2s; }
+    .love-section .love-col .col-content:hover i {
+      background: #d6b161;
+      color: #ffffff; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,172 @@
+@import "./mixin";
+@import "./variable";
+.v-middle{
+    display: table;
+    width: 100%;
+    height: 650px;
+    vertical-align: middle; 
+} 
+.skill-section{
+    
+    .skill-background{
+        position: relative;
+        background: url(../img/parallax/4.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 650px;
+        width: 100%;
+        
+        .dark-overlay{
+            background: rgba($color: #000000, $alpha: .5);
+            position: absolute;
+            width: 50%;
+            height: 100%;
+            left: 50%;
+        }
+    }
+    .skill-content{
+        color: #fff;
+        display: flex;
+        width: 67%;
+        margin: auto;
+        .skill-title{
+            h3{
+                display: table-cell;
+                text-align: center;
+                vertical-align: middle;
+                letter-spacing: 6px;
+                font-size: 24px;
+            }
+        }
+        .skill-bar{
+            padding: 0 30px;
+
+            .skill-bar-content{
+                padding: 0 30px;
+                display: table-cell;
+                vertical-align: middle;
+                h1{
+                    font-size: 20px;
+                    font-weight: 500;
+                    margin-bottom: 30px;
+                }
+                p{
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 23px;
+                    margin-bottom: 40px;
+                }
+                .skill-progress{
+                    .skills-bar-container{
+                        padding: 0;
+                        width: 100%;
+                        min-width: 300px;
+                        list-style:none;
+                        
+                        li{
+                          position: relative;
+                          width: 100%;
+                          padding: 5px;
+                          margin-bottom: 10px;
+                          
+                          .progressbar-title{
+                            color:#333;
+                            
+                            h3{
+                                font-size: 9px;
+                                position: relative;
+                                top: 51px;
+                                left: 8px;
+                                z-index: 1;
+                            }
+                            span{
+                                color: #333;
+                                width: 35px;
+                                height: 20px;
+                                border-radius: 10px;
+                                background-color: #a4a4a4;
+                                font-size: 9px;
+                                padding: 2px 5px;
+                                position: relative;
+                                animation-duration: 0.5s;
+                                animation-timing-function: ease-out;
+                                animation-fill-mode: both;
+                                &:before{
+                                    content: '';
+                                    position: absolute;
+                                    top: 14px;
+                                    left: 9px;
+                                    width: 0;
+                                    height: 0;
+                                    border-left: 5px solid transparent;
+                                    border-right: 5px solid transparent;
+                                    border-top: 6px solid #a4a4a4;
+                                    
+                                }
+                            }
+                            #bubble-percent-80{
+                                animation-name: bubble-percent-80;
+                                animation-delay: $animation-delay;
+                            }
+                            #bubble-percent-90{
+                                animation-name: bubble-percent-90;
+                                animation-delay: $animation-delay;
+                            }
+                            #bubble-percent-75{
+                                animation-name: bubble-percent-75;
+                                animation-delay: $animation-delay;
+                            }
+                            @keyframes bubble-percent-80 {0%{left:0;} 100%{left:289px;}}
+                            @keyframes bubble-percent-90 {0%{left:0;} 100%{left:327px;}}
+                            @keyframes bubble-percent-75 {0%{left:0;} 100%{left:270px;}} 
+                          }// end progressbar-title
+                          
+                          .bar-container{
+                            background: #555;
+                            position: relative;
+                            width: 100%;
+                            height: 20px;
+                            margin-top: 5px;
+                            display: block;
+                            
+                            .progressbar{
+                              position:absolute;
+                              width:0%;
+                              height: 100%;
+                              animation-duration: 0.5s;
+                              animation-timing-function: ease-out;
+                              animation-fill-mode: both;
+                            }
+                            #progress-html{                         
+                              animation-name: progress-html;
+                              animation-delay: $animation-delay;
+                            }
+                      
+                            #progress-pts{
+                              animation-name: progress-pts;
+                              animation-delay: $animation-delay;
+                            }
+                      
+                            #progress-graphic{
+                              animation-name: progress-graphic;
+                              animation-delay: $animation-delay;
+                            }
+                      
+                          }// end bar-container
+                        }
+                    }
+                      
+                    .progresscolor{background-color:#fff;}
+
+                    @keyframes progress-html{0%{width: 0%;} 100%{ width: 80%;}}
+                    @keyframes progress-pts{0%{width: 0%;} 100%{ width: 90%;}}
+                    @keyframes progress-graphic{0%{width: 0%;} 100%{ width: 75%;}}
+                                    
+                }
+            }
+            
+        }
+    }
+}

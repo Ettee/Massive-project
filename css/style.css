@@ -1,37 +1,3 @@
-* {
-  font-family: 'Open Sans', sans-serif;
-  box-sizing: border-box; }
-
-.text-color {
-  color: #7e7e7e; }
-
-header .fixed-top {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 1030; }
-header .navbar {
-  background-color: white;
-  height: 85px;
-  box-shadow: 0px 2px 14px #888888; }
-header .navbar-expand-sm {
-  justify-content: space-between; }
-header .navbar-brand img {
-  max-height: 100%; }
-header .navbar-nav li {
-  margin: 0 5px; }
-  header .navbar-nav li a {
-    font-size: 13px;
-    font-weight: 400;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: black; }
-    header .navbar-nav li a:hover {
-      color: #d6b161; }
-header .navbar-nav li.nav-item.active a {
-  color: #d6b161; }
-
 .owl-carousel .item img {
   height: 70%; }
 .owl-carousel .item .banner-text {
@@ -71,59 +37,277 @@ header .navbar-nav li.nav-item.active a {
 .owl-carousel .light-txt {
   color: #fff !important; }
 
+header .fixed-top {
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030; }
+header .navbar {
+  background-color: white;
+  height: 85px;
+  box-shadow: 0px 2px 14px #888888; }
+header .navbar-expand-sm {
+  justify-content: space-between; }
+header .navbar-brand img {
+  max-height: 100%; }
+header .navbar-nav li {
+  margin: 0 5px; }
+  header .navbar-nav li a {
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black; }
+    header .navbar-nav li a:hover {
+      color: #d6b161; }
+header .navbar-nav li.nav-item.active a {
+  color: #d6b161; }
+
 .love-section {
   width: 75%;
   margin: 100px auto; }
   .love-section .love-text h1 {
-    font-size: 30px;
+    font-size: 23px;
     font-weight: 500;
     letter-spacing: 2px;
     text-transform: uppercase;
-    text-align: center; }
+    text-align: center;
+    line-height: 1.5;
+    color: #333; }
   .love-section .love-text p {
     line-height: 30px;
     width: 70%;
-    margin: 50px  auto;
-    text-align: center; }
-  .love-section .love-col .col-content {
-    border: 1px #e9e9e9 solid;
-    border-radius: 4px;
-    position: relative;
-    padding: 30px;
-    height: 220px;
-    margin: 50px 20px; }
-    .love-section .love-col .col-content h2 {
-      text-transform: uppercase;
-      font-weight: 400;
-      letter-spacing: 1px;
-      font-size: 20px;
-      margin-top: 45px;
-      margin-bottom: 25px; }
-    .love-section .love-col .col-content p {
-      font-size: 14px;
+    margin: 30px auto 50px auto;
+    text-align: center;
+    font-size: 15px; }
+  .love-section .love-col {
+    max-width: 1200px;
+    margin: 0 auto; }
+    .love-section .love-col .col-content {
+      border: 1px #e9e9e9 solid;
+      border-radius: 4px;
+      position: relative;
+      padding: 30px;
+      height: 220px;
+      margin: 50px 20px; }
+      .love-section .love-col .col-content h2 {
+        text-transform: uppercase;
+        font-weight: 400;
+        letter-spacing: 1px;
+        font-size: 20px;
+        margin-top: 45px;
+        margin-bottom: 25px; }
+      .love-section .love-col .col-content p {
+        font-size: 14px;
+        font-weight: 500;
+        color: #7e7e7e;
+        line-height: 23px;
+        text-align: left; }
+      .love-section .love-col .col-content .icon {
+        position: absolute;
+        top: -29px;
+        box-shadow: 0px 2px #fff; }
+        .love-section .love-col .col-content .icon i {
+          font-size: 30px;
+          color: #fff;
+          width: 60px;
+          height: 60px;
+          border: 1px transparent solid;
+          border-radius: 5px;
+          background: #222;
+          padding: 13px;
+          display: flex;
+          justify-content: center;
+          box-shadow: 0px 0px 0px 10px #fff;
+          transition: all 0.2s; }
+      .love-section .love-col .col-content:hover i {
+        background: #d6b161;
+        color: #ffffff; }
+  .love-section .row {
+    margin-right: -15px !important;
+    margin-left: -15px !important; }
+
+.v-middle {
+  display: table;
+  width: 100%;
+  height: 650px;
+  vertical-align: middle; }
+
+.skill-section .skill-background {
+  position: relative;
+  background: url(../img/parallax/4.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 650px;
+  width: 100%; }
+  .skill-section .skill-background .dark-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 50%; }
+.skill-section .skill-content {
+  color: #fff;
+  display: flex;
+  width: 67%;
+  margin: auto; }
+  .skill-section .skill-content .skill-title h3 {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    letter-spacing: 6px;
+    font-size: 24px; }
+  .skill-section .skill-content .skill-bar {
+    padding: 0 30px; }
+    .skill-section .skill-content .skill-bar .skill-bar-content {
+      padding: 0 30px;
+      display: table-cell;
+      vertical-align: middle; }
+      .skill-section .skill-content .skill-bar .skill-bar-content h1 {
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 30px; }
+      .skill-section .skill-content .skill-bar .skill-bar-content p {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 23px;
+        margin-bottom: 40px; }
+      .skill-section .skill-content .skill-bar .skill-bar-content .skill-progress .skills-bar-container {
+        padding: 0;
+        width: 100%;
+        min-width: 300px;
+        list-style: none; }
+        .skill-section .skill-content .skill-bar .skill-bar-content .skill-progress .skills-bar-container li {
+          position: relative;
+          width: 100%;
+          padding: 5px;
+          margin-bottom: 10px; }
+          .skill-section .skill-content .skill-bar .skill-bar-content .skill-progress .skills-bar-container li .progressbar-title {
+            color: #333; }
+            .skill-section .skill-content .skill-bar .skill-bar-content .skill-progress .skills-bar-container li .progressbar-title h3 {
+              font-size: 9px;
+              position: relative;
+              top: 51px;
+              left: 8px;
+              z-index: 1; }
+            .skill-section .skill-content .skill-bar .skill-bar-content .skill-progress .skills-bar-container li .progressbar-title span {
+              color: #333;
+              width: 35px;
+              height: 20px;
+              border-radius: 10px;
+              background-color: #a4a4a4;
+              font-size: 9px;
+              padding: 2px 5px;
+              position: relative;
+              animation-duration: 0.5s;
+              animation-timing-function: ease-out;
+              animation-fill-mode: both; }
+              .skill-section .skill-content .skill-bar .skill-bar-content .skill-progress .skills-bar-container li .progressbar-title span:before {
+                content: '';
+                position: absolute;
+                top: 14px;
+                left: 9px;
+                width: 0;
+                height: 0;
+                border-left: 5px solid transparent;
+                border-right: 5px solid transparent;
+                border-top: 6px solid #a4a4a4; }
+            .skill-section .skill-content .skill-bar .skill-bar-content .skill-progress .skills-bar-container li .progressbar-title #bubble-percent-80 {
+              animation-name: bubble-percent-80;
+              animation-delay: 0.5s; }
+            .skill-section .skill-content .skill-bar .skill-bar-content .skill-progress .skills-bar-container li .progressbar-title #bubble-percent-90 {
+              animation-name: bubble-percent-90;
+              animation-delay: 0.5s; }
+            .skill-section .skill-content .skill-bar .skill-bar-content .skill-progress .skills-bar-container li .progressbar-title #bubble-percent-75 {
+              animation-name: bubble-percent-75;
+              animation-delay: 0.5s; }
+@keyframes bubble-percent-80 {
+  0% {
+    left: 0; }
+  100% {
+    left: 289px; } }
+@keyframes bubble-percent-90 {
+  0% {
+    left: 0; }
+  100% {
+    left: 327px; } }
+@keyframes bubble-percent-75 {
+  0% {
+    left: 0; }
+  100% {
+    left: 270px; } }
+          .skill-section .skill-content .skill-bar .skill-bar-content .skill-progress .skills-bar-container li .bar-container {
+            background: #555;
+            position: relative;
+            width: 100%;
+            height: 20px;
+            margin-top: 5px;
+            display: block; }
+            .skill-section .skill-content .skill-bar .skill-bar-content .skill-progress .skills-bar-container li .bar-container .progressbar {
+              position: absolute;
+              width: 0%;
+              height: 100%;
+              animation-duration: 0.5s;
+              animation-timing-function: ease-out;
+              animation-fill-mode: both; }
+            .skill-section .skill-content .skill-bar .skill-bar-content .skill-progress .skills-bar-container li .bar-container #progress-html {
+              animation-name: progress-html;
+              animation-delay: 0.5s; }
+            .skill-section .skill-content .skill-bar .skill-bar-content .skill-progress .skills-bar-container li .bar-container #progress-pts {
+              animation-name: progress-pts;
+              animation-delay: 0.5s; }
+            .skill-section .skill-content .skill-bar .skill-bar-content .skill-progress .skills-bar-container li .bar-container #progress-graphic {
+              animation-name: progress-graphic;
+              animation-delay: 0.5s; }
+      .skill-section .skill-content .skill-bar .skill-bar-content .skill-progress .progresscolor {
+        background-color: #fff; }
+@keyframes progress-html {
+  0% {
+    width: 0%; }
+  100% {
+    width: 80%; } }
+@keyframes progress-pts {
+  0% {
+    width: 0%; }
+  100% {
+    width: 90%; } }
+@keyframes progress-graphic {
+  0% {
+    width: 0%; }
+  100% {
+    width: 75%; } }
+.our-team-section {
+  margin: 100px 0; }
+  .our-team-section .our-team-text {
+    margin-bottom: 100px; }
+    .our-team-section .our-team-text h1 {
+      font-size: 23px;
       font-weight: 500;
-      color: #7e7e7e;
-      line-height: 23px;
-      text-align: left; }
-    .love-section .love-col .col-content .icon {
-      position: absolute;
-      top: -29px;
-      box-shadow: 0px 2px #fff; }
-      .love-section .love-col .col-content .icon i {
-        font-size: 30px;
-        color: #fff;
-        width: 60px;
-        height: 60px;
-        border: 1px transparent solid;
-        border-radius: 5px;
-        background: #222;
-        padding: 13px;
-        display: flex;
-        justify-content: center;
-        box-shadow: 0px 0px 0px 10px #fff;
-        transition: all 0.2s; }
-    .love-section .love-col .col-content:hover i {
-      background: #d6b161;
-      color: #ffffff; }
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-align: center;
+      line-height: 1.5;
+      color: #333; }
+    .our-team-section .our-team-text p {
+      line-height: 30px;
+      width: 70%;
+      margin: 30px auto 50px auto;
+      text-align: center;
+      font-size: 15px; }
+  .our-team-section .our-team-content {
+    width: 60%;
+    margin: auto; }
+    .our-team-section .our-team-content .team-item img {
+      width: 100%; }
+
+* {
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box; }
+
+.text-color {
+  color: #7e7e7e; }
 
 /*# sourceMappingURL=style.css.map */

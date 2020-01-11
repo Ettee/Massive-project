@@ -1,0 +1,24 @@
+@import "./mixin";
+@import "./variable";
+.our-team-section{
+    margin: 100px 0;
+    .our-team-text{
+        margin-bottom: 100px;
+        h1{
+            @include title();
+        }
+        p{
+            @include title-text();
+        }
+    }
+    .our-team-content{
+        width: 60%;
+        margin: auto;
+        .team-item{
+        
+            img{
+                width: 100%;
+            }
+        }
+    }
+}

@@ -2,3 +2,19 @@
     font-size: $f-size;
     font-weight:$f-weight;
 }
+@mixin title(){   
+    font-size: 23px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.5;
+    color: #333;  
+}
+@mixin title-text(){
+    line-height: 30px;
+    width: 70%;
+    margin: 30px auto 50px auto;
+    text-align: center;
+    font-size: 15px;
+}

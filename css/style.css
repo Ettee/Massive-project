@@ -77,7 +77,7 @@ header .navbar-nav li.nav-item.active a {
     color: #333; }
   .love-section .love-text p {
     line-height: 30px;
-    width: 70%;
+    width: 50%;
     margin: 30px auto 50px auto;
     text-align: center;
     font-size: 15px; }
@@ -294,7 +294,7 @@ header .navbar-nav li.nav-item.active a {
     color: #333; }
   .our-team-section .our-team-text p {
     line-height: 30px;
-    width: 70%;
+    width: 50%;
     margin: 30px auto 50px auto;
     text-align: center;
     font-size: 15px; }
@@ -361,6 +361,52 @@ header .navbar-nav li.nav-item.active a {
               color: #d6b161; }
       .our-team-section .our-team-content .team-item:hover .overlay-item {
         opacity: 1; }
+
+.portfolio-banner {
+  background: #222; }
+  .portfolio-banner .row {
+    width: 70%;
+    margin: 0 auto; }
+    .portfolio-banner .row .pbanner-text {
+      color: white;
+      padding: 55px 0;
+      vertical-align: middle; }
+      .portfolio-banner .row .pbanner-text p:nth-child(1) {
+        margin: 0;
+        font-size: 13px; }
+      .portfolio-banner .row .pbanner-text p:nth-child(2) {
+        margin-top: 6px;
+        margin-bottom: 0;
+        font-size: 21px;
+        letter-spacing: 1px; }
+    .portfolio-banner .row .pbanner-btn {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center; }
+      .portfolio-banner .row .pbanner-btn a button {
+        padding: 15px 30px;
+        color: #fff;
+        background: rgba(255, 255, 255, 0.2);
+        border: none; }
+      .portfolio-banner .row .pbanner-btn a:hover button {
+        background: #d6b161; }
+
+.portfolio {
+  padding: 100px 0; }
+  .portfolio .portfolio-text h1 {
+    font-size: 23px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.5;
+    color: #333; }
+  .portfolio .portfolio-text p {
+    line-height: 30px;
+    width: 50%;
+    margin: 30px auto 50px auto;
+    text-align: center;
+    font-size: 15px; }
 
 * {
   font-family: 'Open Sans', sans-serif;

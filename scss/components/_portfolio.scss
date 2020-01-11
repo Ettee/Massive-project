@@ -1,0 +1,13 @@
+@import "./mixin";
+@import "./variable";
+.portfolio{
+    padding: 100px 0;
+    .portfolio-text{
+        h1{
+            @include title();
+        }
+        p{
+            @include title-text();
+        }
+    }
+}

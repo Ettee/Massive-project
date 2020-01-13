@@ -80,7 +80,8 @@ header .navbar-nav li.nav-item.active a {
     width: 50%;
     margin: 30px auto 50px auto;
     text-align: center;
-    font-size: 15px; }
+    font-size: 15px;
+    color: #7e7e7e; }
   .love-section .love-col {
     display: flex;
     justify-content: center; }
@@ -297,9 +298,10 @@ header .navbar-nav li.nav-item.active a {
     width: 50%;
     margin: 30px auto 50px auto;
     text-align: center;
-    font-size: 15px; }
+    font-size: 15px;
+    color: #7e7e7e; }
   .our-team-section .our-team-content {
-    width: 60%;
+    width: 66%;
     margin: auto; }
     .our-team-section .our-team-content .team-item {
       position: relative; }
@@ -342,8 +344,10 @@ header .navbar-nav li.nav-item.active a {
         .our-team-section .our-team-content .team-item .overlay-item p {
           text-align: center; }
         .our-team-section .our-team-content .team-item .overlay-item p:nth-child(1) {
-          font-size: 20px;
-          margin-bottom: 30px; }
+          font-size: 13px;
+          margin-bottom: 30px;
+          letter-spacing: 4px;
+          font-weight: 400; }
         .our-team-section .our-team-content .team-item .overlay-item p:nth-child(2) {
           font-size: 13px;
           color: #7e7e7e; }
@@ -406,7 +410,61 @@ header .navbar-nav li.nav-item.active a {
     width: 50%;
     margin: 30px auto 50px auto;
     text-align: center;
-    font-size: 15px; }
+    font-size: 15px;
+    color: #7e7e7e; }
+  .portfolio .portfolio-collection {
+    margin: 120px 0; }
+    .portfolio .portfolio-collection .nav {
+      justify-content: center; }
+      .portfolio .portfolio-collection .nav .nav-item a {
+        color: #a9a8a8;
+        font-size: 13px;
+        letter-spacing: 4px; }
+      .portfolio .portfolio-collection .nav .nav-item .active {
+        background: transparent;
+        color: #000000; }
+    .portfolio .portfolio-collection .tab-content {
+      margin-top: 50px; }
+      .portfolio .portfolio-collection .tab-content .container {
+        max-width: 1500px; }
+        .portfolio .portfolio-collection .tab-content .container .row {
+          margin: 30px 0; }
+        .portfolio .portfolio-collection .tab-content .container .row .row-item {
+          position: relative; }
+          .portfolio .portfolio-collection .tab-content .container .row .row-item img {
+            width: 100%; }
+          .portfolio .portfolio-collection .tab-content .container .row .row-item .collection-overlay {
+            position: absolute;
+            top: 0;
+            left: 15px;
+            right: 15px;
+            bottom: 0;
+            border: 20px solid rgba(0, 0, 0, 0.1);
+            background: rgba(255, 255, 255, 0.8);
+            opacity: 0;
+            transition: all 0.3s; }
+            .portfolio .portfolio-collection .tab-content .container .row .row-item .collection-overlay .collection-overlay-content {
+              position: relative;
+              top: 34%; }
+              .portfolio .portfolio-collection .tab-content .container .row .row-item .collection-overlay .collection-overlay-content a {
+                margin-top: 50px;
+                color: black; }
+                .portfolio .portfolio-collection .tab-content .container .row .row-item .collection-overlay .collection-overlay-content a i {
+                  font-size: 35px;
+                  position: relative;
+                  top: -31px;
+                  left: 137px; }
+              .portfolio .portfolio-collection .tab-content .container .row .row-item .collection-overlay .collection-overlay-content p {
+                text-align: center; }
+              .portfolio .portfolio-collection .tab-content .container .row .row-item .collection-overlay .collection-overlay-content p:nth-child(2) {
+                font-size: 13px;
+                letter-spacing: 4px;
+                font-weight: 500; }
+              .portfolio .portfolio-collection .tab-content .container .row .row-item .collection-overlay .collection-overlay-content p:nth-child(3) {
+                font-size: 12px;
+                letter-spacing: 2px; }
+          .portfolio .portfolio-collection .tab-content .container .row .row-item:hover .collection-overlay {
+            opacity: 1; }
 
 * {
   font-family: 'Open Sans', sans-serif;

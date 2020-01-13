@@ -3,6 +3,7 @@
 .love-section{
     width:75%;
     margin:100px auto;
+    overflow: hidden;
     .love-text{
         h1{
             @include title();

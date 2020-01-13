@@ -1,0 +1,84 @@
+@import "./mixin";
+@import "./variable";
+.services-section{
+    padding-top: 100px;
+    .services-text{
+        h1{
+            @include title();
+        }
+        p{
+            @include title-text();
+            width: 70% !important;
+        }
+    }
+    .services-box{
+        .row{
+            flex-wrap: nowrap;
+            .services-box-item{
+                border: 1px solid #f2f2f2;
+                padding: 30px;
+                transition: all .3s;
+                i{
+                    font-size: 42px;
+                    transition:  all .3s;
+                }
+                .services-box-item-text{
+                    margin: 35px auto;
+                    width: 90%;
+                    
+                    p:nth-child(1){
+                        font-weight: normal;
+                        font-size: 17px;
+                        letter-spacing: 1px;
+                        transition:all .3s;
+                    }
+                    p:nth-child(2){
+                        font-size: 13px;
+                        color: #7e7e7e;
+                        line-height: 22px;
+                    }
+                }
+                &:hover{
+                    background: #222222;
+                    border: 1px solid #222222;
+                    i{
+                        color: $font-color;
+                    }
+                    .services-box-item-text{
+                        p:nth-child(1){
+                            color: #fff;
+                        }
+                    }
+                    
+                }
+            }
+            .services-box-item:nth-child(1){
+                border-right: none;
+
+            }
+            .services-box-item:nth-child(3){
+                border-left: none;
+
+            }
+
+        }
+        .row:nth-child(2){
+            
+            .services-box-item:nth-child(1){
+                border-right: none;
+                border-top: none;
+    
+            }
+            .services-box-item:nth-child(2){
+                border-top: none;
+    
+            }
+            .services-box-item:nth-child(3){
+                border-left: none;
+                 border-top: none;
+    
+            }
+            
+        }
+    }
+}

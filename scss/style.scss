@@ -5,6 +5,7 @@
 @import "./components/ourTeam";
 @import"./components/portfolioBanner";
 @import "./components/portfolio";
+@import "./components/services";
 @import "./mixin";
 @import "./variable";
 *{
@@ -13,4 +14,9 @@
 }
 .text-color{
     color: $text-color;
+}
+.icon-middle{
+    display:inline-block;
+    text-align: center;
+    vertical-align: bottom;
 }

@@ -66,7 +66,8 @@ header .navbar-nav li.nav-item.active a {
 
 .love-section {
   width: 75%;
-  margin: 100px auto; }
+  margin: 100px auto;
+  overflow: hidden; }
   .love-section .love-text h1 {
     font-size: 23px;
     font-weight: 500;
@@ -284,7 +285,8 @@ header .navbar-nav li.nav-item.active a {
     width: 75%; } }
 .our-team-section {
   background: #f5f5f5;
-  padding: 100px 0; }
+  padding: 100px 0;
+  overflow: hidden; }
   .our-team-section .our-team-text h1 {
     font-size: 23px;
     font-weight: 500;
@@ -470,11 +472,80 @@ header .navbar-nav li.nav-item.active a {
           .portfolio .portfolio-collection .tab-content .container .row .row-item:hover .collection-overlay {
             opacity: 1; }
 
+.lb-data .lb-details {
+  width: 100% !important;
+  display: flex;
+  justify-content: space-between; }
+
+.services-section {
+  padding-top: 100px; }
+  .services-section .services-text h1 {
+    font-size: 23px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.5;
+    color: #333; }
+  .services-section .services-text p {
+    line-height: 30px;
+    width: 50%;
+    margin: 30px auto 50px auto;
+    text-align: center;
+    font-size: 15px;
+    color: #7e7e7e;
+    width: 70% !important; }
+  .services-section .services-box .row {
+    flex-wrap: nowrap; }
+    .services-section .services-box .row .services-box-item {
+      border: 1px solid #f2f2f2;
+      padding: 30px;
+      transition: all .3s; }
+      .services-section .services-box .row .services-box-item i {
+        font-size: 42px;
+        transition: all .3s; }
+      .services-section .services-box .row .services-box-item .services-box-item-text {
+        margin: 35px auto;
+        width: 90%; }
+        .services-section .services-box .row .services-box-item .services-box-item-text p:nth-child(1) {
+          font-weight: normal;
+          font-size: 17px;
+          letter-spacing: 1px;
+          transition: all .3s; }
+        .services-section .services-box .row .services-box-item .services-box-item-text p:nth-child(2) {
+          font-size: 13px;
+          color: #7e7e7e;
+          line-height: 22px; }
+      .services-section .services-box .row .services-box-item:hover {
+        background: #222222;
+        border: 1px solid #222222; }
+        .services-section .services-box .row .services-box-item:hover i {
+          color: #d6b161; }
+        .services-section .services-box .row .services-box-item:hover .services-box-item-text p:nth-child(1) {
+          color: #fff; }
+    .services-section .services-box .row .services-box-item:nth-child(1) {
+      border-right: none; }
+    .services-section .services-box .row .services-box-item:nth-child(3) {
+      border-left: none; }
+  .services-section .services-box .row:nth-child(2) .services-box-item:nth-child(1) {
+    border-right: none;
+    border-top: none; }
+  .services-section .services-box .row:nth-child(2) .services-box-item:nth-child(2) {
+    border-top: none; }
+  .services-section .services-box .row:nth-child(2) .services-box-item:nth-child(3) {
+    border-left: none;
+    border-top: none; }
+
 * {
   font-family: 'Open Sans', sans-serif;
   box-sizing: border-box; }
 
 .text-color {
   color: #7e7e7e; }
+
+.icon-middle {
+  display: inline-block;
+  text-align: center;
+  vertical-align: bottom; }
 
 /*# sourceMappingURL=style.css.map */

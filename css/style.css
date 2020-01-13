@@ -396,7 +396,7 @@ header .navbar-nav li.nav-item.active a {
         background: #d6b161; }
 
 .portfolio {
-  padding: 100px 0; }
+  padding: 100px 0 0 0; }
   .portfolio .portfolio-text h1 {
     font-size: 23px;
     font-weight: 500;
@@ -413,7 +413,7 @@ header .navbar-nav li.nav-item.active a {
     font-size: 15px;
     color: #7e7e7e; }
   .portfolio .portfolio-collection {
-    margin: 120px 0; }
+    margin: 120px 0 40px 0; }
     .portfolio .portfolio-collection .nav {
       justify-content: center; }
       .portfolio .portfolio-collection .nav .nav-item a {
@@ -459,7 +459,11 @@ header .navbar-nav li.nav-item.active a {
               .portfolio .portfolio-collection .tab-content .container .row .row-item .collection-overlay .collection-overlay-content p:nth-child(2) {
                 font-size: 13px;
                 letter-spacing: 4px;
-                font-weight: 500; }
+                font-weight: 500;
+                cursor: pointer;
+                transition: all 0.3s; }
+                .portfolio .portfolio-collection .tab-content .container .row .row-item .collection-overlay .collection-overlay-content p:nth-child(2):hover {
+                  color: #d6b161; }
               .portfolio .portfolio-collection .tab-content .container .row .row-item .collection-overlay .collection-overlay-content p:nth-child(3) {
                 font-size: 12px;
                 letter-spacing: 2px; }

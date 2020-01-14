@@ -1,2 +1,81 @@
 @import "./mixin";
 @import "./variable";
+.feature-section{
+    margin-bottom: 100px ;
+    .feature-title{
+        h1{
+            @include title();
+        }
+        p{
+            @include title-text();
+        }
+    }
+    .feature-content{
+        padding-top: 50px;
+        .container{
+            max-width: 1250px !important;
+            .row{
+                div:nth-child(1){
+                    img{
+                        width: 100%;
+                    };
+                }
+                div:nth-child(2){
+                    .feature-item{
+                        padding: 35px;
+                        line-height: 1.5;
+                        font-weight: 400;
+                        h1{
+                            color: #e1e1e1;
+                            font-size: 36px;
+                        }
+                        p:nth-child(2){
+                            color: #333333;
+                            font-size: 18px;
+                            letter-spacing: 1px;
+                            
+                        }
+                        p:nth-child(3){
+                            margin-top: 24px;
+                            color: #7e7e7e;
+                            font-size: 13px;
+                            
+                        }
+                    }
+                    .feature-btn{
+                        position: relative;
+                        left: 15px;
+                        
+                        button:nth-child(1){
+                            background: #333 ;
+                            padding: 15px 30px;
+                            font-size: 13px;
+                            margin: 0 20px;
+                            outline: none;
+                            transition: all .3s;
+                            color: #fff;
+                            letter-spacing: 1px;
+                            &:hover{
+                                background: $font-color;
+                            }
+                        }
+                        button:nth-child(2){
+                            background: #fff ;
+                            color: #333;
+                            padding: 15px 30px;
+                            font-size: 13px;
+                            outline: none;
+                            transition: all .3s;
+                            border: 1px solid #333;
+                            letter-spacing: 1px;
+                            &:hover{
+                                background: #333;
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

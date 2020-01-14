@@ -2,6 +2,9 @@
 @import "./variable";
 .carousel-banner{
     .owl-carousel{
+        .owl-item img{
+            width: 100% !important;
+        }
         .item{
             img{
                 height: 70%;
@@ -59,3 +62,4 @@
         }
     }
 }
+

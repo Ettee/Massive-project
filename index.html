@@ -69,7 +69,7 @@
 
   <!-- CAROUSEL BANNER -->
   <section class="carousel-banner">
-    <div class="owl-carousel owl-theme">
+    <div class="owl-carousel owl-theme owl-carousel-banner">
       <div class="item">
         <img src="./img/banner/bs1.jpg" alt="">
         <div class="banner-text ">
@@ -637,7 +637,7 @@
       </div>
       <div class="services-box">
         <div class="row">
-          <div class="col-md-4 services-box-item icon-middle">
+          <div class="col-md-4 services-box-item icon-middle wow fadeInDownBig" data-wow-duration="1s">
             <i class="far fa-lightbulb"></i>
             <div class="services-box-item-text">
               <p class="text-center">CREATIVE DESIGN</p>
@@ -645,7 +645,7 @@
                 Praesent sed nisi eleifend.</p>
             </div>
           </div>
-          <div class="col-md-4 services-box-item icon-middle">
+          <div class="col-md-4 services-box-item icon-middle wow fadeInDownBig" data-wow-delay="0.2s"data-wow-duration="1s">
             <i class="far fa-window-maximize"></i>
             <div class="services-box-item-text">
               <p class="text-center">PROFESSIONAL CODE</p>
@@ -653,7 +653,7 @@
                 Praesent sed nisi eleifend.</p>
             </div>
           </div>
-          <div class="col-md-4 services-box-item icon-middle">
+          <div class="col-md-4 services-box-item icon-middle wow fadeInDownBig" data-wow-delay="0.4s"data-wow-duration="1s">
             <i class="fas fa-laptop"></i>
             <div class="services-box-item-text">
               <p class="text-center">EASY CUSTOMIZE</p>
@@ -664,7 +664,7 @@
 
         </div>
         <div class="row">
-          <div class="col-md-4 services-box-item icon-middle">
+          <div class="col-md-4 services-box-item icon-middle wow fadeInDownBig" data-wow-delay="0.6s"data-wow-duration="1s">
             <i class="fas fa-cog"></i>
             <div class="services-box-item-text">
               <p class="text-center">24/7 SUPPORT</p>
@@ -672,7 +672,7 @@
                 Praesent sed nisi eleifend.</p>
             </div>
           </div>
-          <div class="col-md-4 services-box-item icon-middle">
+          <div class="col-md-4 services-box-item icon-middle wow fadeInDownBig" data-wow-delay="0.8s"data-wow-duration="1s">
             <i class="fas fa-pencil-ruler"></i>
             <div class="services-box-item-text">
               <p class="text-center">BOOTSTRAP</p>
@@ -680,7 +680,7 @@
                 Praesent sed nisi eleifend.</p>
             </div>
           </div>
-          <div class="col-md-4 services-box-item icon-middle">
+          <div class="col-md-4 services-box-item icon-middle wow fadeInDownBig" data-wow-delay="1s"data-wow-duration="1s">
             <i class="far fa-list-alt"></i>
             <div class="services-box-item-text">
               <p class="text-center">CLEAN CODE</p>
@@ -692,6 +692,71 @@
       </div>
     </div>
   </section>
+  
+  <!-- parallax carousel -->
+  <section class="parallax-section">
+    <div class="container-fluid">
+      <div class="carousel">
+        <div class="owl-carousel owl-carousel-parallax owl-theme">
+          <div class="item">
+            <div class="row">
+              <div class="col-md-4">
+                <img src="./img/carousel/obj-1.png" alt="">
+              </div>
+              <div class="col-md-8 parallax-content">
+                <p class="text-uppercase">REALLY GOOD AT WEB DESIGNING</p>
+                <p class="font-italic">
+                  We are a team of multi-skilled and curious digital specialists who are always up for a challenge and learning as fast as digital is changing. We are a team of multi-skilled and curious digital specialists who are always up for a challenge. Multi-skilled
+                  and curious digital specialists.
+                </p>
+                <a href="#">
+                  <div class="btn btn-warning btn-small text-uppercase">get price</div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="item"><h4>
+            <div class="row">
+              <div class="col-md-4">
+                <img src="./img/carousel/obj-2.png" alt="">
+              </div>
+              <div class="col-md-8 parallax-content">
+                <p class="text-uppercase">REALLY GOOD AT WEB DESIGNING</p>
+                <p class="font-italic">
+                  We are a team of multi-skilled and curious digital specialists who are always up for a challenge and learning as fast as digital is changing. We are a team of multi-skilled and curious digital specialists who are always up for a challenge. Multi-skilled
+                  and curious digital specialists.
+                </p>
+                <a href="#">
+                  <div class="btn btn-warning btn-small text-uppercase">get price</div>
+                </a>
+              </div>
+            </div>
+          </h4></div>
+          <div class="item"><h4>
+            <div class="row">
+              <div class="col-md-4">
+                <img src="./img/carousel/obj-3.png" alt="">
+              </div>
+              <div class="col-md-8 parallax-content">
+                <p class="text-uppercase">REALLY GOOD AT WEB DESIGNING</p>
+                <p class="font-italic">
+                  We are a team of multi-skilled and curious digital specialists who are always up for a challenge and learning as fast as digital is changing. We are a team of multi-skilled and curious digital specialists who are always up for a challenge. Multi-skilled
+                  and curious digital specialists.
+                </p>
+                <a href="#">
+                  <div class="btn btn-warning btn-small text-uppercase">get price</div>
+                </a>
+              </div>
+            </div>
+          </h4></div>
+          
+      </div>
+      </div>
+
+    </div>
+  </section>
+
+
 
   <section>
     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum labore culpa ex, id pariatur quisquam rem eum,
@@ -853,12 +918,25 @@
   </script>
   <script>
     $(document).ready(function () {
-      $(".owl-carousel").owlCarousel({
+      $(".owl-carousel-banner").owlCarousel({
         animateOut: 'fadeOut',
         loop: true,
         margin: 10,
         nav: true,
         autoplay: true,
+        autoplayTimeout: 3000,
+        autoplaySpeed: 1000,
+        items: 1
+      });
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $(".owl-carousel-parallax").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        autoplay: false,
         autoplayTimeout: 3000,
         autoplaySpeed: 1000,
         items: 1

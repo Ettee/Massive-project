@@ -6,6 +6,8 @@
 @import"./components/portfolioBanner";
 @import "./components/portfolio";
 @import "./components/services";
+@import "./components/parallax";
+@import "./components/feature";
 @import "./mixin";
 @import "./variable";
 *{
@@ -19,4 +21,7 @@
     display:inline-block;
     text-align: center;
     vertical-align: bottom;
+}
+.owl-carousel .owl-item img{
+    width: unset;
 }

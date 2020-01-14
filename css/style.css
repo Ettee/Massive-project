@@ -1,40 +1,40 @@
-.owl-carousel .item img {
+.carousel-banner .owl-carousel .item img {
   height: 70%; }
-.owl-carousel .item .banner-text {
+.carousel-banner .owl-carousel .item .banner-text {
   position: absolute;
   top: 40%;
   left: 12%;
   width: 40%; }
-  .owl-carousel .item .banner-text p:nth-child(1) {
+  .carousel-banner .owl-carousel .item .banner-text p:nth-child(1) {
     text-transform: uppercase;
     font-weight: 300;
     font-size: 20px;
     letter-spacing: 2px; }
-  .owl-carousel .item .banner-text p:nth-child(2) {
+  .carousel-banner .owl-carousel .item .banner-text p:nth-child(2) {
     text-transform: uppercase;
     font-weight: 400;
     font-size: 30px;
     letter-spacing: 1px; }
-  .owl-carousel .item .banner-text p:nth-child(3) {
+  .carousel-banner .owl-carousel .item .banner-text p:nth-child(3) {
     margin-top: 30px;
     line-height: 32px;
     font-size: 14px; }
-.owl-carousel .owl-dots {
+.carousel-banner .owl-carousel .owl-dots {
   position: absolute;
   left: 50%;
   bottom: 6%; }
-  .owl-carousel .owl-dots button {
+  .carousel-banner .owl-carousel .owl-dots button {
     outline: none; }
-  .owl-carousel .owl-dots .owl-dot span {
+  .carousel-banner .owl-carousel .owl-dots .owl-dot span {
     width: 13px !important;
     height: 13px !important;
     background: transparent !important;
     border: 1px solid white; }
-.owl-carousel .owl-stage-outer {
+.carousel-banner .owl-carousel .owl-stage-outer {
   height: 750px; }
-.owl-carousel .owl-nav {
+.carousel-banner .owl-carousel .owl-nav {
   display: none; }
-.owl-carousel .light-txt {
+.carousel-banner .owl-carousel .light-txt {
   color: #fff !important; }
 
 header .fixed-top {
@@ -536,6 +536,60 @@ header .navbar-nav li.nav-item.active a {
     border-left: none;
     border-top: none; }
 
+.parallax-section {
+  margin: 200px 0; }
+  .parallax-section .container-fluid {
+    height: 500px;
+    background-image: url(../../img/parallax/14.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 20px 20px 0 20px; }
+    .parallax-section .container-fluid .carousel {
+      height: 100%;
+      width: 76%;
+      margin: auto; }
+      .parallax-section .container-fluid .carousel .owl-carousel {
+        position: relative;
+        bottom: -57px; }
+        .parallax-section .container-fluid .carousel .owl-carousel .owl-nav {
+          display: none; }
+        .parallax-section .container-fluid .carousel .owl-carousel .owl-dots {
+          position: relative;
+          top: -80px;
+          display: flex;
+          justify-content: flex-end; }
+          .parallax-section .container-fluid .carousel .owl-carousel .owl-dots button {
+            outline: none; }
+        .parallax-section .container-fluid .carousel .owl-carousel .row .parallax-content {
+          padding: 120px 0 0px 40px; }
+        .parallax-section .container-fluid .carousel .owl-carousel .row div:nth-child(1) img {
+          height: 100%; }
+        .parallax-section .container-fluid .carousel .owl-carousel .row div:nth-child(2) p:nth-child(1) {
+          color: #d6b161;
+          letter-spacing: 2px;
+          font-size: 18px; }
+        .parallax-section .container-fluid .carousel .owl-carousel .row div:nth-child(2) p:nth-child(2) {
+          font-size: 16px;
+          line-height: 30px;
+          color: #fff; }
+        .parallax-section .container-fluid .carousel .owl-carousel .row div:nth-child(2) a:nth-child(3) {
+          display: flex;
+          justify-content: flex-start;
+          text-decoration: none; }
+          .parallax-section .container-fluid .carousel .owl-carousel .row div:nth-child(2) a:nth-child(3) .btn-warning {
+            background-color: #3d3d3d !important;
+            border: none !important;
+            color: #fff !important; }
+          .parallax-section .container-fluid .carousel .owl-carousel .row div:nth-child(2) a:nth-child(3) .btn-small {
+            font-size: 12px;
+            padding: 10px 20px;
+            letter-spacing: 1px;
+            margin-top: 30px; }
+          .parallax-section .container-fluid .carousel .owl-carousel .row div:nth-child(2) a:nth-child(3):hover .btn-warning {
+            background-color: #d6b161 !important; }
+
 * {
   font-family: 'Open Sans', sans-serif;
   box-sizing: border-box; }
@@ -547,5 +601,8 @@ header .navbar-nav li.nav-item.active a {
   display: inline-block;
   text-align: center;
   vertical-align: bottom; }
+
+.owl-carousel .owl-item img {
+  width: unset; }
 
 /*# sourceMappingURL=style.css.map */

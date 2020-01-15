@@ -657,6 +657,140 @@ header .navbar-nav li.nav-item.active a {
             background: #333;
             color: #fff; }
 
+.factor-section .factor-bg {
+  background-image: url(../../img/parallax/7.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 450px;
+  padding: 100px 0px; }
+  .factor-section .factor-bg .row {
+    width: 80%;
+    margin: auto;
+    vertical-align: middle;
+    padding: 95px 0; }
+    .factor-section .factor-bg .row .factor-item {
+      display: flex;
+      justify-content: center; }
+      .factor-section .factor-bg .row .factor-item .factor-icon {
+        color: #fff;
+        font-size: 35px;
+        position: relative; }
+      .factor-section .factor-bg .row .factor-item .factor-content {
+        color: #fff;
+        padding: 0  70px; }
+        .factor-section .factor-bg .row .factor-item .factor-content::before {
+          position: absolute;
+          top: 0;
+          left: 100px;
+          width: 1px;
+          height: 80px;
+          content: '';
+          transform: rotate(30deg);
+          background: white; }
+        .factor-section .factor-bg .row .factor-item .factor-content h1 {
+          letter-spacing: 2px;
+          font-size: 36px; }
+        .factor-section .factor-bg .row .factor-item .factor-content p {
+          letter-spacing: 1px; }
+
+.blog-section {
+  margin: 100px 0; }
+  .blog-section .blog-title h1 {
+    font-size: 23px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.5;
+    color: #333; }
+  .blog-section .blog-title p {
+    line-height: 30px;
+    width: 50%;
+    margin: 30px auto 50px auto;
+    text-align: center;
+    font-size: 15px;
+    color: #7e7e7e; }
+  .blog-section .blog-block {
+    margin-top: 80px; }
+  .blog-section .container {
+    max-width: 1158px; }
+    .blog-section .container .row .blog-content {
+      padding: 70px 40px; }
+      .blog-section .container .row .blog-content p:nth-child(1) {
+        letter-spacing: 1px;
+        font-size: 13px;
+        margin-bottom: 25px; }
+      .blog-section .container .row .blog-content p:nth-child(2) {
+        letter-spacing: 1px;
+        font-size: 17px;
+        line-height: 1.5;
+        font-weight: 500;
+        margin-bottom: 25px;
+        transition: all .3s; }
+        .blog-section .container .row .blog-content p:nth-child(2):hover {
+          color: #d6b161;
+          cursor: pointer; }
+        .blog-section .container .row .blog-content p:nth-child(2):before {
+          content: '';
+          width: 86px;
+          height: 1.5px;
+          background-color: #333;
+          position: absolute;
+          top: 103px;
+          left: 40px; }
+    .blog-section .container .row .blog-link {
+      font-size: 11px;
+      letter-spacing: 1px; }
+      .blog-section .container .row .blog-link span {
+        margin: 0 5px; }
+        .blog-section .container .row .blog-link span a {
+          color: #909090;
+          text-decoration: none;
+          transition: all .3s; }
+          .blog-section .container .row .blog-link span a:hover {
+            color: #d6b161; }
+    .blog-section .container .row div:nth-child(4)::before, .blog-section .container .row div:nth-child(6)::before {
+      content: "";
+      width: 0;
+      height: 0;
+      border-left: 12px solid transparent;
+      border-right: 12px solid transparent;
+      border-bottom: 13px solid #fff;
+      position: absolute;
+      top: -13px;
+      left: 195px; }
+    .blog-section .container .row div:nth-child(2):before {
+      content: "";
+      width: 0;
+      height: 0;
+      border-left: 12px solid transparent;
+      border-right: 12px solid transparent;
+      border-top: 13px solid #fff;
+      position: absolute;
+      bottom: -13px;
+      left: 195px;
+      z-index: 1; }
+  .blog-section .blog-view-all {
+    display: flex;
+    justify-content: center;
+    margin: 70px 0; }
+    .blog-section .blog-view-all a {
+      display: flex;
+      color: #909090;
+      text-decoration: none;
+      transition: all .3s; }
+      .blog-section .blog-view-all a p {
+        font-size: 13px;
+        letter-spacing: 1px; }
+      .blog-section .blog-view-all a:hover {
+        color: #000; }
+    .blog-section .blog-view-all .view-blog-icon {
+      margin: 0 15px; }
+      .blog-section .blog-view-all .view-blog-icon i {
+        font-size: 21px; }
+
 * {
   font-family: 'Open Sans', sans-serif;
   box-sizing: border-box; }

@@ -19,3 +19,22 @@
     font-size: 15px;
     color: $text-color;
 }
+@mixin news-content(){
+    p:nth-child(1){
+        color: white;
+        letter-spacing: 1px;
+        margin-bottom: 0px;
+    }
+    p:nth-child(2){
+        color: white;
+        font-size: 21px;
+        font-weight: 500;
+        margin-bottom: 30px;
+    }
+    p:nth-child(3){
+        color: white;
+        font-size: 14px;
+        line-height: 28px;
+        
+    }
+}

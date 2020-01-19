@@ -1,0 +1,107 @@
+@import "./mixin";
+@import "./variable";
+.price-section{
+    margin:100px;
+    overflow: hidden;
+    .price-title{
+        h1{
+            @include title();
+        }
+        p{
+            @include title-text();
+        }
+    }
+    .price-option{
+        margin-top: 100px;
+        max-width: 1300px !important;
+        .row{
+            justify-content: center;
+            .price-item{
+                border: 1px solid #e8e8e8;
+                margin: 0 20px;
+                padding: 50px 25px;
+                text-align: center;
+                .option-name{
+                    margin-bottom: 35px;
+                    text-align: center;
+                    letter-spacing: 1px;
+                }
+                .option-price{
+                    margin: 35px 0;
+                    .price{
+                        margin: 20px;
+                        p:nth-child(1){
+                            font-size: 40px;
+                            font-weight: 700;
+                            margin-bottom: 0px;
+                            span{
+                            font-size: 15px !important;
+                            font-weight: normal !important;
+                            }
+                        }
+                        p:nth-child(2){
+                            font-size: 12px;
+                            color: #333333;
+                        }
+                    }
+                }
+                .price-content{
+                    padding: 15px ;
+                    ul{
+                        list-style: none;
+                        padding: 0;
+                        li{
+                            font-size:13px ;
+                            margin-bottom: 15px;
+                        }
+                        
+                    }
+                }
+                button{
+                    border: 1px solid #e8e8e8;
+                    border-radius: 0 !important;
+                    outline: none ;
+                    padding: 10px 30px;
+                    background: #fff;
+                    transition: all .3s;
+                    &:hover{
+                        background-color: #222;
+                        border-color: #222;
+                        color: #fff;
+
+                    }
+                }
+                
+            }
+            .active{
+                background:#222;
+                border: 1px #222 solid;
+                .option-name{
+                    color: $font-color;
+                }
+                hr{
+                    background:#747474;
+                }
+                .option-price{
+                    color: #fff;
+                    .price{
+                        p:nth-child(2){
+                            color: #fff;
+                        }
+                    }
+                }
+                .price-content{
+                    color: #7d7d7d;
+                }
+                button{
+                    transition: all .3s;
+                    &:hover{
+                        background-color: $font-color;
+                        border-color:$font-color ;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}

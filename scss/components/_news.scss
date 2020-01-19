@@ -1,0 +1,27 @@
+@import "./mixin";
+@import "./variable";
+.news-section{
+    margin-bottom: 100px;
+    .row{
+        height: 500px;
+        div:nth-child(1){
+            background-image:url(../../img/post/p10.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 90%;
+            padding: 62px;
+            @include news-content();
+        }
+        div:nth-child(2){
+            background-image:url(../../img/post/p11.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 90%;
+            padding: 62px;
+            @include news-content();
+            
+        }
+    }
+}

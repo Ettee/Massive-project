@@ -1,0 +1,46 @@
+@import "./mixin";
+@import "./variable";
+.testimonial-section{
+    .container-fluid{
+        position: relative;
+        background-image: url(../../img/parallax/19.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 450px;
+    }
+    .testi-carousel{
+        padding: 80px 210px;
+        .container{
+            position: absolute;
+            .testi-owl{
+                .item{
+                    .testi-img{
+                        margin-bottom: 40px;
+                        img{
+                            display: block;
+                            margin-left: auto;
+                            margin-right: auto;
+                            width: 90px;
+                            height: 90px;
+                            border-radius: 50%;
+                        }
+                    }
+                    .testi-content{
+                        width: 70%;
+                        margin: auto;
+                        color: #fff;
+                    }
+                }
+                .owl-dots{
+                    position: relative;
+                    top: -40px;
+                    button{
+                        outline: none;
+                    }
+                }
+            }
+        }
+    }
+}

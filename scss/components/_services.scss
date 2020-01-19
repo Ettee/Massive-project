@@ -2,6 +2,7 @@
 @import "./variable";
 .services-section{
     padding-top: 100px;
+    overflow: hidden;
     .services-text{
         h1{
             @include title();

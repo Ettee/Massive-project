@@ -899,38 +899,38 @@
       <div class="container">
         <div class="owl-carousel owl-theme testi-owl">
           <div class="item">
-            <div class="testi-img">
+            <div class="testi-img wow zoomIn">
               <img src="./img/event_avatar1.jpg" alt="">
             </div>
             <div class="testi-content">
               <p class="text-center font-italic">Nam nec dui dolor. Curabitur in laoreet erat. Nam nec dui dolor. Aliquam varius dolor nunc,
                 interdum commodo justoporttitor vitae. Quisque fermentum purus.
               </p>
-              <p class="text-center">- Kevin Paige -</p>
+              <p class="text-center text-uppercase">- Kevin Paige -</p>
               <p class="text-center text-uppercase">ABC</p>
             </div>
           </div>
           <div class="item">
-            <div class="testi-img">
+            <div class="testi-img wow zoomIn">
               <img src="./img/event_avatar3.jpg" alt="">
             </div>
             <div class="testi-content">
               <p class="text-center font-italic ">Nam nec dui dolor. Curabitur in laoreet erat. Nam nec dui dolor. Aliquam varius dolor nunc,
                 interdum commodo justoporttitor vitae. Quisque fermentum purus.
               </p>
-              <p class="text-center">- john doe -</p>
+              <p class="text-center text-uppercase">- John Doe -</p>
               <p class="text-center text-uppercase">head of marketing, TB</p>
             </div>
           </div>
           <div class="item">
-            <div class="testi-img">
+            <div class="testi-img wow zoomIn">
               <img src="./img/event_avatar1.jpg" alt="">
             </div>
             <div class="testi-content">
               <p class="text-center font-italic">Nam nec dui dolor. Curabitur in laoreet erat. Nam nec dui dolor. Aliquam varius dolor nunc,
                 interdum commodo justoporttitor vitae. Quisque fermentum purus.
               </p>
-              <p class="text-center">- linda smith -</p>
+              <p class="text-center text-uppercase">- Linda Smith -</p>
               <p class="text-center text-uppercase">ceo, tb</p>
             </div>
           </div>
@@ -1053,6 +1053,72 @@
       </div>
     </div>
   </section>
+
+  <!-- SUBSCRIBE -->
+  <section class="container-fluid subscribe-section">
+    <div class="subs-bg">
+      <div class="subs-title">
+        <h1 class="text-uppercase">don't wanna purchase now?</h1>
+        <p>subscribe to get in touch</p>
+      </div>
+      <div class="form-subs mx-auto">
+        <form class="form-email-subs">
+          <input type="text" class="form-control" placeholder="Enter your email address">
+          <button class="btn btn-dark text-uppercase">subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLIENTS -->
+  <section class="clients-section">
+    <div class="clients-title">
+      <h1>our clients</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut explicabo iusto quaerat</p>
+    </div>
+    <div class="clients-carousel-content mx-auto">
+      <div class="owl-carousel owl-theme clients-owl ">
+        <div class="item">
+          <img src="./img/clients/c-1.png" alt="">
+        </div>
+        <div class="item">
+          <img src="./img/clients/c-2.png" alt="">
+        </div>
+        <div class="item">
+          <img src="./img/clients/c-3.png" alt="">
+        </div>
+        <div class="item">
+          <img src="./img/clients/c-4.png" alt="">
+        </div>
+        <div class="item">
+          <img src="./img/clients/c-5.png" alt="">
+        </div>
+        <div class="item">
+          <img src="./img/clients/c-6.png" alt="">
+        </div>
+        <div class="item">
+          <img src="./img/clients/c-7.png" alt="">
+        </div>
+        <div class="item">
+          <img src="./img/clients/c-8.png" alt="">
+        </div>
+        <div class="item">
+          <img src="./img/clients/c-1.png" alt="">
+        </div>
+        <div class="item">
+          <img src="./img/clients/c-2.png" alt="">
+        </div>
+        <div class="item">
+          <img src="./img/clients/c-3.png" alt="">
+        </div>
+        <div class="item">
+          <img src="./img/clients/c-4.png" alt="">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
   <section>
     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum labore culpa ex, id pariatur quisquam rem eum,
     nemo deleniti quo autem, voluptatem quaerat? Nemo eius veritatis sunt cum eveniet totam distinctio maxime?
@@ -1252,6 +1318,19 @@
         autoplayTimeout: 3000,
         autoplaySpeed: 1000,
         items: 1
+      });
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $(".clients-owl").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplaySpeed: 1000,
+        items: 6
       });
     });
   </script>

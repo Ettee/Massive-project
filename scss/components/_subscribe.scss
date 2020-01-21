@@ -1,0 +1,49 @@
+@import "./mixin";
+@import "./variable";
+.subscribe-section{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    .subs-bg{
+        background-color: #f8f8f8;
+        padding: 100px 30px;
+        .subs-title{
+            h1{
+                @include title();
+                color: $font-color !important;
+            }
+            p{
+                @include title-text();
+                margin-top: 5px !important;
+            }
+        }
+        .form-subs{
+            width: 47%;
+            .form-email-subs{
+                input.form-control{
+                    height: 45px !important;
+                    font-size: 13px;
+                    border: 1px solid #f8f8f8;
+                    display: inline;
+                    width: 80% !important;
+                    outline: none !important;
+                }
+                button{
+                    display: inline;
+                    margin-left: 10px;
+                    height: 45px !important;
+                    font-size: 13px;
+                    padding: 10px 20px;
+                    letter-spacing: 1px;
+                    outline: none !important;
+                    transition: all .3s;
+                    border: none;
+                    &:hover{
+                        background-color: $font-color;
+
+                    }
+                }
+            }
+        }
+        
+    }
+}

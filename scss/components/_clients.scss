@@ -1,0 +1,26 @@
+@import "./mixin";
+@import "./variable";
+.clients-section{
+    margin-bottom: 100px;
+    .clients-title{
+        margin: 100px 0px;
+        h1{
+            @include title();
+        }
+        p{
+            @include title-text();
+        }
+    }
+    .clients-carousel-content{
+        width: 80%;
+        .clients-owl{
+            .owl-nav{
+                display: none;
+            }
+            .owl-dots{
+                position: relative;
+                top: 45px;
+            }
+        }
+    }
+}

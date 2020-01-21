@@ -31,14 +31,21 @@
                         width: 70%;
                         margin: auto;
                         color: #fff;
+                        p:nth-child(2){
+                            letter-spacing: 1px;
+                            font-size: 13px;
+                        }
                     }
                 }
                 .owl-dots{
                     position: relative;
-                    top: -40px;
+                    top: 0px;
                     button{
                         outline: none;
                     }
+                }
+                .owl-nav{
+                    display: none;
                 }
             }
         }

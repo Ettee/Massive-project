@@ -817,11 +817,16 @@ header .navbar-nav li.nav-item.active a {
       width: 70%;
       margin: auto;
       color: #fff; }
+      .testimonial-section .testi-carousel .container .testi-owl .item .testi-content p:nth-child(2) {
+        letter-spacing: 1px;
+        font-size: 13px; }
     .testimonial-section .testi-carousel .container .testi-owl .owl-dots {
       position: relative;
-      top: -40px; }
+      top: 0px; }
       .testimonial-section .testi-carousel .container .testi-owl .owl-dots button {
         outline: none; }
+    .testimonial-section .testi-carousel .container .testi-owl .owl-nav {
+      display: none; }
 
 .video-section {
   margin-bottom: 200px; }
@@ -975,6 +980,78 @@ header .navbar-nav li.nav-item.active a {
             background-color: #d6b161;
             border-color: #d6b161;
             color: #fff; }
+
+.subscribe-section {
+  padding-left: 0 !important;
+  padding-right: 0 !important; }
+  .subscribe-section .subs-bg {
+    background-color: #f8f8f8;
+    padding: 100px 30px; }
+    .subscribe-section .subs-bg .subs-title h1 {
+      font-size: 23px;
+      font-weight: 500;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-align: center;
+      line-height: 1.5;
+      color: #333;
+      color: #d6b161 !important; }
+    .subscribe-section .subs-bg .subs-title p {
+      line-height: 30px;
+      width: 50%;
+      margin: 30px auto 50px auto;
+      text-align: center;
+      font-size: 15px;
+      color: #7e7e7e;
+      margin-top: 5px !important; }
+    .subscribe-section .subs-bg .form-subs {
+      width: 47%; }
+      .subscribe-section .subs-bg .form-subs .form-email-subs input.form-control {
+        height: 45px !important;
+        font-size: 13px;
+        border: 1px solid #f8f8f8;
+        display: inline;
+        width: 80% !important;
+        outline: none !important; }
+      .subscribe-section .subs-bg .form-subs .form-email-subs button {
+        display: inline;
+        margin-left: 10px;
+        height: 45px !important;
+        font-size: 13px;
+        padding: 10px 20px;
+        letter-spacing: 1px;
+        outline: none !important;
+        transition: all .3s;
+        border: none; }
+        .subscribe-section .subs-bg .form-subs .form-email-subs button:hover {
+          background-color: #d6b161; }
+
+.clients-section {
+  margin-bottom: 100px; }
+  .clients-section .clients-title {
+    margin: 100px 0px; }
+    .clients-section .clients-title h1 {
+      font-size: 23px;
+      font-weight: 500;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-align: center;
+      line-height: 1.5;
+      color: #333; }
+    .clients-section .clients-title p {
+      line-height: 30px;
+      width: 50%;
+      margin: 30px auto 50px auto;
+      text-align: center;
+      font-size: 15px;
+      color: #7e7e7e; }
+  .clients-section .clients-carousel-content {
+    width: 80%; }
+    .clients-section .clients-carousel-content .clients-owl .owl-nav {
+      display: none; }
+    .clients-section .clients-carousel-content .clients-owl .owl-dots {
+      position: relative;
+      top: 45px; }
 
 * {
   font-family: 'Open Sans', sans-serif;

@@ -801,9 +801,11 @@ header .navbar-nav li.nav-item.active a {
   background-size: cover;
   height: 450px; }
 .testimonial-section .testi-carousel {
-  padding: 80px 210px; }
+  padding: 80px 100px; }
   .testimonial-section .testi-carousel .container {
-    position: absolute; }
+    position: absolute;
+    width: 63%;
+    margin: 0 190px; }
     .testimonial-section .testi-carousel .container .testi-owl .item .testi-img {
       margin-bottom: 40px; }
       .testimonial-section .testi-carousel .container .testi-owl .item .testi-img img {

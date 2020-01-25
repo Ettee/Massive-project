@@ -11,9 +11,11 @@
         height: 450px;
     }
     .testi-carousel{
-        padding: 80px 210px;
+        padding: 80px 100px;
         .container{
             position: absolute;
+            width: 63%;
+            margin: 0 190px;
             .testi-owl{
                 .item{
                     .testi-img{

@@ -1,0 +1,36 @@
+@import "./mixin";
+@import "./variable";
+.contact-section{
+    margin: 100px 0;
+    .contact-bg{
+        background-image: url(../../img/parallax/15.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 450px;
+        padding: 10% 0;
+        .container{
+            display: block;
+            margin: auto;
+            .row-contact{
+                .contact-item{
+                    color: #fff;
+                    padding: 0 50px;
+                    text-align: center;
+                    i{
+                        font-size: 35px;
+                        margin-bottom: 25px;
+                    }
+                    h4{
+                        font-size: 17px;
+                        margin-bottom: 25px;
+                    }
+                    p{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
